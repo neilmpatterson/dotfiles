@@ -1,26 +1,25 @@
 # dotfiles for my z shell and nvim setup
 
-This project just maintains my vim, nvim and zsh config and other configurataions I'd like to share across computers
+This project just maintains my vim, nvim and zsh config and other configurataions I'd like to share across computers. This is based on Christian Chiarulli's [machfiles repo](https://github.com/ChristianChiarulli/Machfiles) and his [lunarvim basic ide](https://github.com/LunarVim/nvim-basic-ide). 
 
 ## Prerequisites: when setting up a new machine
 
 setup git and clone this repo into your home dir, then install the following using which ever package manager makes sense:
 
-1. Install gnu stow [https://savannah.gnu.org/git/?group=stow](https://savannah.gnu.org/git/?group=stow)
+1. Install gnu stow https://savannah.gnu.org/git/?group=stow
    once installed cd into dotfiles and run `stow */`
 
-2. Intall zap-zsh [https://github.com/zap-zsh/zap](https://github.com/zap-zsh/zap)
+2. Intall zap-zsh https://github.com/zap-zsh/zap
    once installed you can `source ~/.zshrc`
 
-3. Install vim-plug (for regular .vimrc config)
-   [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+3. Install vim-plug (for regular .vimrc config) https://github.com/junegunn/vim-plug
 	 once installed start vim with `vim ~/.vimrc` and run `:PlugInstall` and restart vim
 
-4. Install fzf [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+4. Install fzf https://github.com/junegunn/fzf
 
-5. Install fnm for installing node and npm [https://github.com/Schniz/fnm](https://github.com/Schniz/fnm)
+5. Install fnm for installing node and npm https://github.com/Schniz/fnm
 
-6. Install phython3 pip (sudo apt install python3-pip or https://pip.pypa.io/en/stable/installation/)
+6. Install phython3 pip (`sudo apt install python3-pip` or https://pip.pypa.io/en/stable/installation/)
 
 7. Install Neovim 0.8 from source:
 
