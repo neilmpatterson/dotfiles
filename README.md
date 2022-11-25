@@ -19,9 +19,11 @@ setup git and clone this repo into your home dir, then install the following usi
 
 5. Install fnm for installing node and npm https://github.com/Schniz/fnm
 
-6. Install phython3 pip (`sudo apt install python3-pip` or https://pip.pypa.io/en/stable/installation/)
+6. Install lazygit https://github.com/jesseduffield/lazygit
 
-7. Install Neovim 0.8 from source:
+7. Install phython3 pip (`sudo apt install python3-pip` or https://pip.pypa.io/en/stable/installation/)
+
+8. Install Neovim 0.8 from source:
 
 **NOTE** Verify the required [build prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites) for your system.
 
@@ -33,7 +35,7 @@ make CMAKE_BUILD_TYPE=Release
 sudo make install
 ```
 
-8. Get healthy
+9. Get healthy
 
 Open `nvim` and enter the following:
 
