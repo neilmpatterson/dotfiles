@@ -4,7 +4,7 @@ This project just maintains my vim, nvim and zsh config and other configurataion
 
 ## Prerequisites: when setting up a new machine
 
-setup git and clone this repo then install the following using which ever package manager makes sense:
+setup git and clone this repo into your home dir, then install the following using which ever package manager makes sense:
 
 1. Install gnu stow [https://savannah.gnu.org/git/?group=stow](https://savannah.gnu.org/git/?group=stow)
    once installed cd into dotfiles and run `stow */`
@@ -18,7 +18,11 @@ setup git and clone this repo then install the following using which ever packag
 
 4. Install fzf [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
 
-5. Install Neovim 0.8 from source:
+5. Install fnm for installing node and npm [https://github.com/Schniz/fnm](https://github.com/Schniz/fnm)
+
+6. Install phython3 pip (sudo apt install python3-pip or https://pip.pypa.io/en/stable/installation/)
+
+7. Install Neovim 0.8 from source:
 
 **NOTE** Verify the required [build prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites) for your system.
 
@@ -29,7 +33,8 @@ git checkout release-0.8
 make CMAKE_BUILD_TYPE=Release
 sudo make install
 ```
-4. Get healthy
+
+8. Get healthy
 
 Open `nvim` and enter the following:
 
@@ -78,8 +83,4 @@ We will also need `ripgrep` for Telescope to work:
 
 **NOTE** make sure you have [node](https://nodejs.org/en/) installed, I recommend a node manager like [fnm](https://github.com/Schniz/fnm).
 
-## Fonts
 
-I recommend using the following repo to get a "Nerd Font" (Font that supports icons)
-
-[getnf](https://github.com/ronniedroid/getnf) 

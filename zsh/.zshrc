@@ -32,3 +32,7 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# fnm
+export PATH="/home/neil/.local/share/fnm:$PATH"
+eval "`fnm env`"
