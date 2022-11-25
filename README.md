@@ -7,8 +7,18 @@ This project just maintains my vim, nvim and zsh config and other configurataion
 setup git and clone this repo then install the following using which ever package manager makes sense:
 
 1. Install gnu stow [https://savannah.gnu.org/git/?group=stow](https://savannah.gnu.org/git/?group=stow)
+   once installed cd into dotfiles and run `stow */`
+
 2. Intall zap-zsh [https://github.com/zap-zsh/zap](https://github.com/zap-zsh/zap)
-3. Install Neovim 0.8 from source:
+   once installed you can `source ~/.zshrc`
+
+3. Install vim-plug (for regular .vimrc config)
+   [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+	 once installed start vim with `vim ~/.vimrc` and run `:PlugInstall` and restart vim
+
+4. Install fzf [https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)
+
+5. Install Neovim 0.8 from source:
 
 **NOTE** Verify the required [build prerequisites](https://github.com/neovim/neovim/wiki/Building-Neovim#build-prerequisites) for your system.
 

@@ -49,14 +49,14 @@ colorscheme onedark
 :imap kj <Esc>
 
 " toggle the file tree
-noremap <silent> <leader>n :NERDTreeToggle<CR>
+noremap <silent> <leader>e :NERDTreeToggle<CR>
 
 " fuzzy finder mappings
-nnoremap <silent> <leader>o :FzfFiles<CR>
+nnoremap <silent> <leader>ff :FzfFiles<CR>
 nnoremap <silent> <leader>O :FzfFiles!<CR>
 cnoremap <silent> <C-p>  :FzfHistory:<CR>
 cnoremap <silent> <C-_> <ESC>:FzfHistory/<CR>
-nnoremap <silent> <leader>b :FzfBuffers<CR>
+nnoremap <silent> <leader>fb :FzfBuffers<CR>
 nnoremap <silent> <leader>` :FzfMarks<CR>
 nnoremap <silent> <F1> :FzfHelptags<CR>
 inoremap <silent> <F1> <ESC>:FzfHelptags<CR>
