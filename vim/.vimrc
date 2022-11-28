@@ -18,6 +18,9 @@ let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 
 if (empty($TMUX))
 	if (has("nvim"))
@@ -32,19 +35,22 @@ endif
 syntax on
 set number
 set relativenumber
-set tabstop=2
-set shiftwidth=2
-set noexpandtab
-set smartindent 
 set nowrap
 set listchars=tab:>-,trail:.,nbsp:.,space:.
 set list
 set cursorline
+set autoindent
+set noexpandtab
+set tabstop=4
+set shiftwidth=4
+filetype plugin indent on
+filetype on
+filetype indent on
 colorscheme onedark
 
 " Mappings
 
-" remap the esc key to exit insert mode 
+" remap the esc key to exit insert mode
 :imap jk <Esc>
 :imap kj <Esc>
 
@@ -53,7 +59,8 @@ noremap <silent> <leader>e :NERDTreeToggle<CR>
 
 " fuzzy finder mappings
 nnoremap <silent> <leader>ff :FzfFiles<CR>
-nnoremap <silent> <leader>O :FzfFiles!<CR>
+nnoremap <silent> <leader>FF :FzfFiles!<CR>
+nnoremap <silent> <leader>fs :FzfAg<CR>
 cnoremap <silent> <C-p>  :FzfHistory:<CR>
 cnoremap <silent> <C-_> <ESC>:FzfHistory/<CR>
 nnoremap <silent> <leader>fb :FzfBuffers<CR>
