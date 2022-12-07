@@ -244,40 +244,10 @@ _G.packer_plugins = {
     path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["vim-bundler"] = {
-    loaded = true,
-    path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-bundler",
-    url = "https://github.com/tpope/vim-bundler"
-  },
-  ["vim-dispatch"] = {
-    loaded = true,
-    path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-dispatch",
-    url = "https://github.com/tpope/vim-dispatch"
-  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
-  },
-  ["vim-rails"] = {
-    loaded = true,
-    path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-rails",
-    url = "https://github.com/tpope/vim-rails"
-  },
-  ["vim-rake"] = {
-    loaded = true,
-    path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-rake",
-    url = "https://github.com/tpope/vim-rake"
-  },
-  ["vim-rspec"] = {
-    loaded = true,
-    path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-rspec",
-    url = "https://github.com/thoughtbot/vim-rspec"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "/Users/neil.patterson/.local/share/nvim/site/pack/packer/start/vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   }
 }
 
