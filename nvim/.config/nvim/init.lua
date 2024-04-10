@@ -1,22 +1,10 @@
-require "user.impatient"
-require "user.plugins"
-require "user.autocommands"
-require "user.colorscheme"
-require "user.cmp"
-require "user.telescope"
-require "user.gitsigns"
-require "user.treesitter"
-require "user.autopairs"
-require "user.comment"
-require "user.nvim-tree"
-require "user.bufferline"
-require "user.lualine"
-require "user.toggleterm"
-require "user.project"
-require "user.illuminate"
--- require "user.indentline"
-require "user.alpha"
-require "user.lsp"
-require "user.dap"
-require "user.options"
-require "user.keymaps"
+-- Typecraft (Neovim for Nerds: Setup)
+-- require("typecraft.core")
+-- require("typecraft.lazy")
+
+-- Josean Martinez (Neovim Guide https://www.josean.com/posts/how-to-setup-neovim-2024)
+require("neil.core")
+require("neil.lazy")
+
+-- Josean Martinez (old packer version)
+-- require("typecraft.core")
