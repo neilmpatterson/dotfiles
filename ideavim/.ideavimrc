@@ -1,0 +1,42 @@
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set NERDTree
+
+""" Common settings -------------------------
+set scrolloff=5
+set incsearch
+set showmode
+set nu
+set relativenumber
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+
+""" My Mappings -----------------------------
+:imap jk <Esc>
+:imap kj <Esc>
+map <silent> <Leader>ee :NERDTree<CR>
+map <leader>ef <Action>(SelectInProjectView)
+map <Leader>z <Action>(ToggleZenMode)
+map <leader>rn <Action>(RenameElement)
+map <Leader>gf <Action>(ReformatCode)
+map <Leader>si :source ~/.ideavimrc<CR>
+map <Leader><Space> <Action>(CodeCompletion)
+
+""" Find things -----------------------------
+nmap <leader>ff :find<cr>
+nmap <leader>fs <action>(FindInPath)
+nmap <leader>u <action>(FindUsages)
+nmap <leader>fw <action>(FindWordAtCaret)
+nmap <leader>p <action>(PreviousTab)
+nmap <leader>n <action>(NextTab)
+
+""" GoTo keybinding -------------------------
+map gd <Action>(GotoDeclaration)
+map ge <Action>(GotoNextError)
+map gi <Action>(GotoImplementation)
+map gt <Action>(GotoTypeDeclaration)
+map <leader>t <Action>(GotoTest)
+
