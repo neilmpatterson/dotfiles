@@ -7,4 +7,4 @@ require("neil.core")
 require("neil.lazy")
 
 -- Josean Martinez (old packer version)
--- require("typecraft.core")
+-- require("packer.core")
