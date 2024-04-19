@@ -18,8 +18,10 @@ brew install --cask iterm2
 brew install neovim
 brew install ripgrep
 brew install node
-brew install node
-brew install jesseduffield/lazygit/lazygit
+brew install fzf 
+brew install fd 
+brew install bat 
+brew install eza 
 ```
 
 Then switch to this terminal.
