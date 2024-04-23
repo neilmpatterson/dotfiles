@@ -12,6 +12,10 @@ keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
+-- show alpha dashboard
+keymap.set("n", "<leader>db", ":Alpha<CR>", { desc = "Show the Alpha Dashboard" })
+
+
 -- increment/decrement numbers
 keymap.set("n", "<leader>+", "<C-a>", { desc = "Increment number" }) -- increment
 keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" }) -- decrement
@@ -22,6 +26,11 @@ keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) 
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- buffer navigation
+keymap.set("n", "<leader>n", ":bnext<cr>", { desc = "Move to next buffer" })
+keymap.set("n", "<leader>p", ":bprevious<cr>", { desc = "Move to prefious buffer" })
+
+-- tab navigation
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
