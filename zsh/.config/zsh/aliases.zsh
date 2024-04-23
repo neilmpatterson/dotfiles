@@ -27,11 +27,8 @@ alias vim=nvim
 alias t=tmux
 
 # Obsidian
-alias oo='cd $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Work'
-alias ooh='cd $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Personal'
-alias or='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Work/inbox/*.md'
-alias orh='vim $HOME/library/Mobile\ Documents/iCloud~md~obsidian/Documents/Personal/inbox/*.md'
-# alias ou='cd $HOME/notion-obsidian-sync-zazencodes && node batchUpload.js --lastmod-days-window 5'
+alias oo='cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Work'
+alias or='nvim inbox/*.md' # ALERT: only after running oo cmd
 
 # Dir list, nav
 alias pwdy="echo $(pwd) | pbcopy"

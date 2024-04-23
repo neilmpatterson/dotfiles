@@ -17,7 +17,6 @@
 -- >>> ))) <leader>odd # or delete
 -- >>>
 -- >>> og # organize saved notes from zettelkasten into notes/[tag] folders
--- >>> ou # sync local with Notion
 --
 -- navigate to vault
 vim.keymap.set("n", "<leader>oo", ":cd /Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work<cr>")
