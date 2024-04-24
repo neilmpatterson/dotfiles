@@ -41,6 +41,6 @@ alias ......="cd ../../../../.."
 
 # Git
 alias gs='git status'
-alias ga='git add -u'
+alias ga='git add .'
 gm() { git commit -m "$1" }
 alias gp='git push'
