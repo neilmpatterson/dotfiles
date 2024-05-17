@@ -22,12 +22,12 @@ return {
 					path = "/Users/neil.patterson/Library/Mobile Documents/iCloud~md~obsidian/Documents/Personal",
 				},
 			},
-			notes_subdir = "inbox",
+			notes_subdir = "+Inbox",
 			new_notes_location = "notes_subdir",
 
 			disable_frontmatter = true,
 			templates = {
-				subdir = "templates",
+				subdir = "Atlas/Extras/Templates",
 				date_format = "%Y-%m-%d",
 				time_format = "%H:%M:%S",
 			},

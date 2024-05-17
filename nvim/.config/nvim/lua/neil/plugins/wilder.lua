@@ -18,6 +18,7 @@ return {
 
 		wilder.setup({
 			modes = { ":", "/", "?" },
+			enable_cmdline_enter = 0,
 		})
 	end,
 }

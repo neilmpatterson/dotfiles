@@ -14,6 +14,10 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 -- vim.opt.foldenable = true
 
+-- Spelling
+opt.spelllang = 'en_us'
+opt.spell = true
+
 -- line wrapping
 opt.wrap = false -- disable line wrapping
 

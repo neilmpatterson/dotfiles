@@ -1,0 +1,24 @@
+#!/bin/bash
+
+year=$(date "+%Y")
+month=$(date "+%m-%B")
+formatted_file_name=$(date "+%Y-%m-%d-%A")
+today=$(date +"%Y-%m-%d")
+second_brain='/Users/neil.patterson/library/Mobile Documents/iCloud~md~obsidian/Documents/Work'
+file="Calendar/$year/$month/$formatted_file_name.md"
+template_file='Atlas/Extras/Templates/Template, Daily Note.md'
+
+cd "$second_brain" || exit
+
+if [ ! -f "$template_file" ]; then
+  echo "Error: Template file '$template_file' not found."
+  exit 1
+fi
+
+# If the daily note does not exist, create a new one.
+if [ ! -f "$file" ]; then
+  echo "File does not exist, creating new daily note."
+  touch "$file"
+fi
+
+nvim "$file" -c ":ObsidianTemplate Template, Daily Note"
