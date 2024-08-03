@@ -22,35 +22,23 @@ brew install fzf
 brew install fd 
 brew install bat 
 brew install eza 
-```
-
-Then switch to this terminal.
-
-Install A Nerd Font
-I use Meslo Nerd Font. To install it do:
-
-```sh
-brew tap homebrew/cask-fonts
-```
-
-And then do:
-
-```sh
-brew install font-meslo-lg-nerd-font
+brew install pyenv
+brew install --cask font-meslo-lg-nerd-font
+brew install stow
 ```
 
 Then open iTerm2 settings with CMD+, and under Profiles > Text change the font to MesloLGS Nerd Font Mono
 
-2. Install gnu stow https://savannah.gnu.org/git/?group=stow
+1. Install gnu stow (already installed above with brew) 
    once installed cd into dotfiles and run `stow */`
 
-3. Install vim-plug (for regular .vimrc config) https://github.com/junegunn/vim-plug
+2. Install vim-plug (for regular .vimrc config) https://github.com/junegunn/vim-plug
    once installed start vim with `vim ~/.vimrc` and run `:PlugInstall` and restart vim
 
-4. Install zap-zsh https://github.com/zap-zsh/zap
+3. Install zap-zsh https://github.com/zap-zsh/zap
    once installed you can `source ~/.zshrc`
 
-5. Install tpm (tmux plugin manager)
+4. Install tpm (tmux plugin manager)
 
 Run the following:
 
@@ -58,11 +46,11 @@ Run the following:
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-once installed you can `source ~/.tmux.com`
+once installed you can `source ~/.tmux.conf`
 
-6. Install fzf https://github.com/junegunn/fzf
+5. Install fzf https://github.com/junegunn/fzf
 
-7. Get healthy
+6. Get healthy
 
 Open `nvim` and enter the following:
 

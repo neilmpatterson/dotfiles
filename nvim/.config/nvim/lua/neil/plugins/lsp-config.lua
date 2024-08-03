@@ -19,7 +19,7 @@ return {
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
-				"solargraph",
+				--"solargraph",
 			},
 		},
 	},
@@ -44,9 +44,9 @@ return {
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.solargraph.setup({
-				capabilities = capabilities,
-			})
+			--lspconfig.solargraph.setup({
+			--	capabilities = capabilities,
+			--})
 			lspconfig.graphql.setup({
 				capabilities = capabilities,
 			})
