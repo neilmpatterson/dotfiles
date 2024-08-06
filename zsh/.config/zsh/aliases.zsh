@@ -45,6 +45,11 @@ alias ga='git add .'
 gm() { git commit -m "$1" }
 alias gp='git push'
 
+# JRuby - usage: $ jr rails s
+jr() {
+  jruby --debug -J-Xmn1G -J-Xms1G -J-Xmx4g -S "$@"
+}
+
 # CLI Pomodoro Timers
 # Requires https://github.com/caarlos0/timer to be installed
 # Requires https://github.com/julienXX/terminal-notifier to be installed
