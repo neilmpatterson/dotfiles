@@ -17,7 +17,13 @@ alias rm='rm -i'
 alias df='df -h'     # human-readable sizes
 
 # ---- Eza (better ls) -----
-alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+# alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias ld='eza -lD'
+alias lf='eza -lf --color=always  --git --icons=always --no-permissions| grep -v /'
+alias lh='eza -dl .*  --git --icons=always --no-permissions --group-directories-first'
+alias ll='eza -al  --git --icons=always --no-permissions --group-directories-first'
+alias ls='eza -alf --color=always --git --icons=always --no-permissions  --sort=size | grep -v /'
+alias lt='eza -al --git --icons=always --no-permissions --sort=modified'
 
 # Neovim
 alias v=nvim
