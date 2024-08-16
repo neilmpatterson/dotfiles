@@ -21,7 +21,7 @@ alias ld='eza -lD --color=always --git --icons=always --no-permissions'
 alias lf='eza -lf --color=always --git --icons=always --no-permissions| grep -v /'
 alias lh='eza -dl .* --color=always --git --icons=always --no-permissions --group-directories-first'
 alias ll='eza -al --color=always --git --icons=always --no-permissions --group-directories-first'
-alias ls='eza -alf --color=always --git --icons=always --no-permissions  --sort=size | grep -v /'
+alias ls='eza -al --color=always --git --icons=always --no-permissions  --sort=size | grep -v /' 
 alias lt='eza -al --color=always --git --icons=always --no-permissions --sort=modified'
 
 # Neovim
