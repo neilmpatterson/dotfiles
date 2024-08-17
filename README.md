@@ -1,6 +1,6 @@
 # dotfiles for my z shell and nvim setup
 
-This project just maintains my vim, nvim and zsh config and other configurataions I'd like to share across computers.
+This project just maintains my vim, nvim and zsh config and other configurations I'd like to share across computers.
 At one time, this was based on Christian Chiarulli's [machfiles repo](https://github.com/ChristianChiarulli/Machfiles) and his [lunarvim basic ide](https://github.com/LunarVim/nvim-basic-ide).
 However now, I have used a lot of the foundation from Josean Martinez's [nvim setup guide](https://www.josean.com/posts/how-to-setup-neovim-2024)
 
