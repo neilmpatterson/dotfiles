@@ -1,0 +1,16 @@
+# /Users/neil.patterson/.config/tmuxinator/composer.yml
+name: composer
+root: ~/Projects/composer
+windows:
+  - editor:
+      layout: f5cf,151x79,0,0[151x59,0,0,57,151x19,0,60,60]
+      panes:
+        - nvim
+        - cl
+  - server:
+      layout: tiled
+      panes:
+        - nvm use; npm run start-webpacker
+        - nvm use; npm run start-microfrontends
+        - jr rails s -e development 
+  - logs: tail -f log/development.log

@@ -30,6 +30,7 @@ alias vim=nvim
 
 # Tmux
 alias t=tmux
+alias mux=tmuxinator
 
 # Obsidian
 alias oo='cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Work'
@@ -54,18 +55,3 @@ alias gp='git push'
 jr() {
   jruby --debug -J-Xmn1G -J-Xms1G -J-Xmx4g -S "$@"
 }
-
-# CLI Pomodoro Timers
-# Requires https://github.com/caarlos0/timer to be installed
-# Requires https://github.com/julienXX/terminal-notifier to be installed
-# brew install caarlos0/tap/timer
-# brew install terminal-notifier
-focus() {
-	local duration="${1:-25m}"  # Use the provided duration argument or default to 25m
-	timer "$duration" && terminal-notifier -message 'Pomodoro'\
-        -title 'Focus Timer is up! Take a Break 😊'\
-        -sound Crystal
-}        
-alias rest="timer 5m && terminal-notifier -message 'Pomodoro'\
-        -title 'Break is over! Focus on something new 😬'\
-        -sound Crystal"
