@@ -19,7 +19,8 @@ return {
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
-				--"solargraph",
+				-- "ruby_lsp",
+				-- "solargraph",
 			},
 		},
 	},
@@ -44,9 +45,12 @@ return {
 			lspconfig.tailwindcss.setup({
 				capabilities = capabilities,
 			})
-			--lspconfig.solargraph.setup({
-			--	capabilities = capabilities,
-			--})
+			-- lspconfig.solargraph.setup({
+			-- capabilities = capabilities,
+			-- })
+			-- lspconfig.ruby_lsp.setup({
+			-- 	capabilities = capabilities,
+			-- })
 			lspconfig.graphql.setup({
 				capabilities = capabilities,
 			})

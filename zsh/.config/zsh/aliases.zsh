@@ -49,6 +49,7 @@ alias ......="cd ../../../../.."
 alias gs='git status'
 alias ga='git add .'
 gm() { git commit -m "$1" }
+gco() { git checkout "$1" }
 alias gp='git push'
 
 # JRuby - usage: $ jr rails s
