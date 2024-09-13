@@ -5,13 +5,12 @@ for_window [class="^.*"] border pixel 0
 # set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-exec_always --no-startup-id feh --bg-scale ~/backgrounds/phish/IMG_1476.JPG
+exec_always --no-startup-id feh --bg-scale ~/backgrounds/phish/IMG_1475.JPG
 exec --no-startup-id xrdb -merge ~/.Xresources
 exec_always --no-startup-id setxkbmap -option :nocaps
 # exec_always --no-startup-id setxkbmap -option 
 # exec --no-startup-id variety
 exec_always --no-startup-id autotiling
-# exec_always --no-startup-id xborders
 exec --no-startup-id picom --config ~/.config/picom/picom.conf
 
 # kill any hanging polybar processes

@@ -81,3 +81,6 @@ _fzf_comprun() {
     *)            fzf --preview "bat -n --color=always --line-range :500 {}" "$@" ;;
   esac
 }
+
+export PATH=$PATH:/home/neil/.spicetify
+
