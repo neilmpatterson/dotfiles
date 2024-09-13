@@ -186,6 +186,3 @@ run = "move-node-to-workspace E"
 if.app-id = 'com.jetbrains.rubymine'
 run = "move-node-to-workspace 1"
 
-[[on-window-detected]]
-if.app-id = 'us.zoom.xos'
-run = "move-node-to-workspace 1"
