@@ -120,6 +120,7 @@ alt-m = 'workspace M' # for Music
 alt-n = 'workspace N' # for Notes (Obsidian)
 alt-s = 'workspace S' # for Stats
 alt-t = 'workspace T' # for Terminal
+alt-z = 'workspace Z' # for Home/Personal
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 cmd-ctrl-alt-shift-1 = 'move-node-to-workspace 1'
@@ -137,6 +138,7 @@ cmd-ctrl-alt-shift-m = 'move-node-to-workspace M' # for Music
 cmd-ctrl-alt-shift-n = 'move-node-to-workspace N' # for Notes (Obsidian)
 cmd-ctrl-alt-shift-s = 'move-node-to-workspace S' # for Stats
 cmd-ctrl-alt-shift-t = 'move-node-to-workspace T' # for Terminal
+cmd-ctrl-alt-shift-z = 'move-node-to-workspace Z' # for Home/Personal
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
