@@ -24,6 +24,9 @@ alias ll='eza -al --color=always --git --icons=always --no-permissions --group-d
 alias ls='eza -al --color=always --git --icons=always --no-permissions  --sort=size | grep -v /' 
 alias lt='eza -al --color=always --git --icons=always --no-permissions --sort=modified'
 
+# Lazygit
+alias g='lazygit'
+
 # Neovim
 alias v=nvim
 alias vim=nvim
