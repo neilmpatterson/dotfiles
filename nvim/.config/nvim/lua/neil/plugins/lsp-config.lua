@@ -12,7 +12,7 @@ return {
 		opts = {
 			-- list of servers for mason to install
 			ensure_installed = {
-				"tsserver",
+				"ts_ls",
 				"html",
 				"cssls",
 				"tailwindcss",
@@ -31,9 +31,9 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
 			local opts = { remap = false, silent = true }
-			local keymap = vim.keymap -- for consisness
+			local keymap = vim.keymap -- for conciseness
 
-			lspconfig.tsserver.setup({
+			lspconfig.ts_ls.setup({
 				capabilities = capabilities,
 			})
 			lspconfig.html.setup({
