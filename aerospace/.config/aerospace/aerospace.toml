@@ -87,6 +87,7 @@ outer.right =      10
 # See: https://nikitabobko.github.io/AeroSpace/commands#layout
 alt-slash = 'layout tiles horizontal vertical'
 alt-comma = 'layout accordion horizontal vertical'
+alt-shift-comma = 'close-all-windows-but-current'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#focus
 alt-h = 'focus left'
@@ -188,3 +189,18 @@ run = "move-node-to-workspace E"
 if.app-id = 'com.jetbrains.rubymine'
 run = "move-node-to-workspace 1"
 
+[[on-window-detected]]
+if = { app-id = "us.zoom.xos" } 
+run = "layout floating"
+
+[[on-window-detected]]
+if = { app-id = "com.apple.MobileSMS" }
+run = "layout floating"  
+
+[[on-window-detected]]
+if = { app-id = "com.utmapp.UTM" }
+run = "layout floating"
+
+[[on-window-detected]]
+if = { app-id = "keybase.Electron" }
+run = "layout floating"

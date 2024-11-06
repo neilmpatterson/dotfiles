@@ -60,14 +60,3 @@ jr() {
   jruby --debug -J-Xmn1G -J-Xms1G -J-Xmx4g -S "$@"
 }
 
-# Connecting to Composer pod (Rails console)
-#	https://finalsiteinc.atlassian.net/wiki/x/LADLK
-#	One way is to use this composerexec function, which takes in context as first parameter, and tenant name as second parameter
-#	sample usage is:
-#	composerexec gke_east_dev classicmobileapp
-composerexec () {
-	command=${3:-'jruby -G -S bin/rails c'}
-	podname=$(kubectl get pods --namespace $2 --context $1 | grep 'front-end' | cut -f1 -d' ' | tail -n1)
-	echo "kubectl exec -it -c composer --namespace $2 $podname --context $1 -- $command"
-	eval "kubectl exec -it -c composer --namespace $2 $podname --context $1 -- $command"
-}

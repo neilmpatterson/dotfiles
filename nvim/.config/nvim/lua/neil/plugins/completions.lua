@@ -39,6 +39,7 @@ return {
 						{ name = "nvim_lsp" }, -- lsp
 						{ name = "luasnip" }, -- snippets
 						{ name = "path" }, -- file system paths
+						{ name = "ts_ls" }, -- typescript completion
 						-- { name = "solargraph" }, -- ruby completion
 					},
 					{
