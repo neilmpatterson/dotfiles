@@ -8,6 +8,9 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+# Override ripgrep to always search hidden files
+alias rg="rg --hidden --glob '!.git'"
+
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
