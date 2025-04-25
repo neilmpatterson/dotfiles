@@ -27,55 +27,43 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		lazy = false,
-		config = function()
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
-			local lspconfig = require("lspconfig")
-			local opts = { remap = false, silent = true }
+		dependencies = { 'saghen/blink.cmp' },
+		opts = {
+			servers = {
+				lua_ls = {},
+				ts_ls = {},
+				html  ={},
+				cssls = {},
+				tailwindcss = {},
+				graphql = {},
+				emmet_ls = {},
+			},
+		},
+		config = function(_, opts)
+			local lspconfig = require('lspconfig')
 			local keymap = vim.keymap -- for conciseness
-
-			lspconfig.ts_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.html.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.cssls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.tailwindcss.setup({
-				capabilities = capabilities,
-			})
-			-- lspconfig.solargraph.setup({
-			-- capabilities = capabilities,
-			-- })
-			-- lspconfig.ruby_lsp.setup({
-			-- 	capabilities = capabilities,
-			-- })
-			lspconfig.graphql.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.lua_ls.setup({
-				capabilities = capabilities,
-			})
-			lspconfig.emmet_ls.setup({
-				capabilities = capabilities,
-			})
-
+			local kb_options = { remap = false, silent = true }
+			for server, config in pairs(opts.servers) do
+			  -- passing config.capabilities to blink.cmp merges with the capabilities in your
+			  -- `opts[server].capabilities, if you've defined it
+			  config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
+			  lspconfig[server].setup(config)
+			end
 			-- set keybinds
-			opts.desc = "Show documentation for what is under cursor"
-			keymap.set("n", "K", vim.lsp.buf.hover, opts)
+			kb_options .desc = "Show documentation for what is under cursor"
+			keymap.set("n", "K", vim.lsp.buf.hover, kb_options)
 
-			opts.desc = "Show LSP definitions"
-			keymap.set("n", "<leader>gd", vim.lsp.buf.definition, opts)
+			kb_options.desc = "Show LSP definitions"
+			keymap.set("n", "<leader>gd", vim.lsp.buf.definition, kb_options)
 
-			opts.desc = "Show LSP references"
-			keymap.set("n", "<leader>gr", vim.lsp.buf.references, opts)
+			kb_options.desc = "Show LSP references"
+			keymap.set("n", "<leader>gr", vim.lsp.buf.references, kb_options)
 
-			opts.desc = "See available code actions"
-			keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, opts)
+			kb_options.desc = "See available code actions"
+			keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, kb_options)
 
-			opts.desc = "Restart LSP"
-			keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
-		end,
+			kb_options.desc = "Restart LSP"
+			keymap.set("n", "<leader>rs", ":LspRestart<CR>", kb_options) -- mapping to restart lsp if necessary
+		end
 	},
 }

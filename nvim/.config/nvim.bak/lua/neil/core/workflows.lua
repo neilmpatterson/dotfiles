@@ -22,24 +22,37 @@
 vim.keymap.set(
 	"n",
 	"<leader>oo",
-	":cd /Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work<cr>"
+	":cd /Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work<cr>",
+	{ desc = "Navigate to Obsidan Vault" }
 )
 -- convert note to template and remove leading white space
-vim.keymap.set("n", "<leader>on", ":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>")
+vim.keymap.set(
+	"n", 
+	"<leader>on", 
+	":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
+	{ desc = "Apply the note template to the md file" }
+)
 -- strip date from note title and replace dashes with spaces
 -- must have cursor on title
-vim.keymap.set("n", "<leader>of", ":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>")
+vim.keymap.set(
+	"n", 
+	"<leader>of", 
+	":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>",
+	{ desc = "Format the title of the Note" }
+)
 --
 -- search for files in full vault
 vim.keymap.set(
 	"n",
 	"<leader>os",
-	':Telescope find_files search_dirs={"/Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work/Atlas/Notes"}<cr>'
+	':Telescope find_files search_dirs={"/Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work"}<cr>',
+	{ desc = "Search for files in obsidian vault" }
 )
 vim.keymap.set(
 	"n",
 	"<leader>oz",
-	':Telescope live_grep search_dirs={"/Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work/Atlas/Notes"}<cr>'
+	':Telescope live_grep search_dirs={"/Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work"}<cr>',
+	{ desc = "Grep search for files in obsidain vault" }
 )
 --
 -- for review workflow
@@ -47,10 +60,11 @@ vim.keymap.set(
 vim.keymap.set(
 	"n",
 	"<leader>ok",
-	":!mv '%:p' /Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work/+Outbox<cr>:bd<cr>"
+	":!mv '%:p' /Users/neil.patterson/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Work/2\\ Areas<cr>:bd<cr>",
+	{ desc = "Move file from obsidian inbox to the outbox" }
 )
 -- delete file in current buffer
-vim.keymap.set("n", "<leader>odd", ":!rm '%:p'<cr>:bd<cr>")
+vim.keymap.set("n", "<leader>odd", ":!rm '%:p'<cr>:bd<cr>", { desc = "Obsidian delete note during review process" })
 
 -- Distraction Free Writing Mode
 vim.keymap.set("n", "<leader>zz", ":ZenMode<cr>", { desc = "Open distraction free writing mode" })

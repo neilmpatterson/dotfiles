@@ -40,7 +40,7 @@ alias mux=tmuxinator
 
 # Obsidian
 alias oo='cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Work'
-alias or='nvim inbox/*.md' # ALERT: only after running oo cmd
+alias or='nvim 0\ Inbox/*.md' # ALERT: only after running oo cmd
 
 # Dir list, nav
 alias pwdy="echo $(pwd) | pbcopy"
@@ -60,6 +60,6 @@ alias gp='git push'
 
 # JRuby - usage: $ jr rails s
 jr() {
-  jruby --debug -J-Xmn1G -J-Xms1G -J-Xmx4g -S "$@"
+  jruby --debug -J-Xmn2G -J-Xms2G -J-Xmx6g -S "$@"
 }
 

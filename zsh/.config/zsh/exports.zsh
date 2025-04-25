@@ -82,5 +82,3 @@ _fzf_comprun() {
   esac
 }
 
-export PATH=$PATH:/home/neil/.spicetify
-

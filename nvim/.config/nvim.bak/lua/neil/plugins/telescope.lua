@@ -24,9 +24,19 @@ return {
 			},
 			pickers = {
 				find_files = {
-					hidden = true
-				}
-			}
+					hidden = true,
+				},
+				live_grep = {
+					additional_args = function()
+						return { "--hidden", "--glob", "!**/.git/*" }
+					end,
+				},
+				grep_string = {
+					additional_args = function()
+						return { "--hidden", "--glob", "!**/.git/*" }
+					end,
+				},
+			},
 		})
 
 		telescope.load_extension("fzf")
@@ -39,7 +49,7 @@ return {
 		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 
 		keymap.set("n", "<leader>fs", function()
-			require('telescope.builtin').live_grep({
+			require("telescope.builtin").live_grep({
 				additional_args = { "--hidden", "--glob", "!**/.git/*" },
 			})
 		end, { desc = "Find string in cwd (including hidden, respecting .gitignore)" })

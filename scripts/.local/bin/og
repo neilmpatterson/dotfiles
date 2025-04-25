@@ -2,8 +2,8 @@
 
 # Directory containing markdown files
 VAULT_DIR="/Users/neil.patterson/library/Mobile Documents/iCloud~md~obsidian/Documents/Work"
-SOURCE_DIR="+Outbox"
-DEST_DIR="Atlas/Notes/Sources"
+SOURCE_DIR="0 Inbox"
+DEST_DIR="2 Areas"
 
 # Iterate through all markdown files in the source directory
 find "$VAULT_DIR/$SOURCE_DIR" -type f -name "*.md" | while read -r file; do
