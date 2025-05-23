@@ -17,7 +17,7 @@ local bubbles_theme = {
   normal = {
     a = { fg = colors.black, bg = colors.violet },
     b = { fg = colors.white, bg = colors.grey },
-    c = { fg = colors.white },
+	c = { fg = colors.white, bg = colors.black },
   },
 
   insert = { a = { fg = colors.black, bg = colors.blue } },
@@ -27,7 +27,7 @@ local bubbles_theme = {
   inactive = {
     a = { fg = colors.white, bg = colors.black },
     b = { fg = colors.white, bg = colors.black },
-    c = { fg = colors.white },
+	c = { fg = colors.white, bg = colors.black },
   },
 }
 

@@ -43,25 +43,20 @@
       "keyColor": "cyan",
       "type": "packages"
     },
-    {
-      "key": "     WM           ",
-      "keyColor": "blue",
-      "type": "wm"
-    },
-    {
-      "key": "     Shell        ",
-      "keyColor": "green",
-      "type": "shell"
-    },
+    // {
+    //   "key": "     WM           ",
+    //   "keyColor": "blue",
+    //   "type": "wm"
+    // },
+    // {
+    //   "key": "     Shell        ",
+    //   "keyColor": "green",
+    //   "type": "shell"
+    // },
     {
       "key": "     Terminal     ",
       "keyColor": "cyan",
       "type": "terminal"
-    },
-    {
-      "key": "     Font         ",
-      "keyColor": "blue",
-      "type": "terminalfont"
     },
     {
       "key": "    󰻠 CPU          ",
@@ -78,11 +73,11 @@
       "keyColor": "blue",
       "type": "memory"
     },
-    {
-      "key": "     Wifi         ",
-      "keyColor": "green",
-      "type": "wifi"
-    },
+    // {
+    //   "key": "     Wifi         ",
+    //   "keyColor": "green",
+    //   "type": "wifi"
+    // },
     "break",
     {
       "type": "custom",

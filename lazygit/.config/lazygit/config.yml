@@ -35,7 +35,7 @@ notARepository: "skip" # one of: 'prompt' | 'create' | 'skip'
 os:
   editCommand: "nvim"
 
-customCommands:
-  - key: '<c-\>'
-    context: 'global'
-    command: null 
+# customCommands:
+#   - key: '<c-\>'
+#     context: 'global'
+#     command: null 
