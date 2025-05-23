@@ -39,7 +39,13 @@ alias t=tmux
 alias mux=tmuxinator
 
 # Obsidian
-alias oo='cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/Work'
+if [[ "$(uname)" == "Darwin" ]]; then
+    # macOS path
+	alias oo='cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs/notes/Work'
+else
+    # Linux path
+    alias oo='cd $HOME/Documents/notes/Work'
+fi
 alias or='nvim 0\ Inbox/*.md' # ALERT: only after running oo cmd
 
 # Dir list, nav
