@@ -1,5 +1,6 @@
 #!/bin/sh
 export EDITOR="nvim"
+export TERM="xterm-kitty"
 export PATH="$HOME/.local/bin":$PATH
 export MANWIDTH=999
 export PATH="$HOME/.local/share/neovim/bin":$PATH
