@@ -4,9 +4,10 @@ year=$(date "+%Y")
 month=$(date "+%m-%B")
 formatted_file_name=$(date "+%Y-%m-%d-%A")
 today=$(date +"%Y-%m-%d")
-second_brain='/Users/neil.patterson/library/Mobile Documents/iCloud~md~obsidian/Documents/Work'
-file="Calendar/$year/$month/$formatted_file_name.md"
-template_file='Atlas/Extras/Templates/Template, Daily Note.md'
+second_brain='/home/neil/Documents/notes/Work'
+file_dir="$second_brain/2 Areas/Calendar/$year/$month"
+file="$file_dir/$formatted_file_name.md"
+template_file="$second_brain/3 Resources/Extras/Templates/Template, Daily Note.md"
 
 cd "$second_brain" || exit
 
@@ -18,7 +19,7 @@ fi
 # If the daily note does not exist, create a new one.
 if [ ! -f "$file" ]; then
   echo "File does not exist, creating new daily note."
-  touch "$file"
+  mkdir -p "$file_dir" && touch "$file"
 fi
 
 nvim "$file" -c ":ObsidianTemplate Template, Daily Note"

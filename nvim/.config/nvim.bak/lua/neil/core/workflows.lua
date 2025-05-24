@@ -27,16 +27,16 @@ vim.keymap.set(
 )
 -- convert note to template and remove leading white space
 vim.keymap.set(
-	"n", 
-	"<leader>on", 
+	"n",
+	"<leader>on",
 	":ObsidianTemplate note<cr> :lua vim.cmd([[1,/^\\S/s/^\\n\\{1,}//]])<cr>",
 	{ desc = "Apply the note template to the md file" }
 )
 -- strip date from note title and replace dashes with spaces
 -- must have cursor on title
 vim.keymap.set(
-	"n", 
-	"<leader>of", 
+	"n",
+	"<leader>of",
 	":s/\\(# \\)[^_]*_/\\1/ | s/-/ /g<cr>",
 	{ desc = "Format the title of the Note" }
 )

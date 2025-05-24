@@ -7,7 +7,7 @@ fi
 
 file_name=$(echo "$1" | tr ' ' '-')
 formatted_file_name=$(date "+%Y-%m-%d")_${file_name}.md
-second_brain="/Users/neil.patterson/library/Mobile Documents/iCloud~md~obsidian/Documents/Work"
-note_path="$second_brain/0 Inbox/$formatted_file_name"
+second_brain="~/Documents/notes/Work"
+note_path="$second_brain/0\\ Inbox/$formatted_file_name"
 touch "$note_path"
 nvim "$note_path"
