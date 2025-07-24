@@ -15,5 +15,9 @@ return {
       date_format = "%Y-%m-%d",
       time_format = "%H:%M:%S",
     },
+    picker = {
+      -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
+      name = "snacks.nvim",
+    },
   },
 }

@@ -40,11 +40,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Auto-start or attach to tmux "playground" session only when in $HOME
-if command -v tmux >/dev/null 2>&1; then
-  if [ -z "$TMUX" ] && [ -z "$SSH_TTY" ] && [ "$PWD" = "$HOME" ]; then
-    tmux attach-session -t playground 2>/dev/null || tmux new-session -s playground
-  fi
-fi
+# if command -v tmux >/dev/null 2>&1; then
+#   if [ -z "$TMUX" ] && [ -z "$SSH_TTY" ] && [ "$PWD" = "$HOME" ]; then
+#     tmux attach-session -t playground 2>/dev/null || tmux new-session -s playground
+#   fi
+# fi
 
 # Run Fastfetch BTW
 # fastfetch
@@ -52,3 +52,11 @@ fi
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# pnpm
+export PNPM_HOME="/home/neil/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
