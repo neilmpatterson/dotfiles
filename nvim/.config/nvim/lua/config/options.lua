@@ -4,6 +4,9 @@
 
 local opt = vim.opt -- for conciseness
 
+-- Use system clipboard
+opt.clipboard = "unnamedplus"
+
 -- Tabs & Indentation
 opt.autoindent = false
 opt.expandtab = false
