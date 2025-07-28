@@ -5,7 +5,6 @@ export PATH="$HOME/.local/bin":$PATH
 export MANWIDTH=999
 export PATH="$HOME/.local/share/neovim/bin":$PATH
 export PATH="/usr/bin/node":$PATH
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-13.jdk/Contents/Home
 #export PATH="$PATH:./node_modules/.bin"
 # eval "`pip completion --zsh`"
 export PYENV_ROOT="$HOME/.pyenv"
@@ -20,7 +19,9 @@ if [ -f '/Users/neil.patterson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/neil.patterson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/neil.patterson/google-cloud-sdk/completion.zsh.inc'; fi
-export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# Set the openssl to 1.1 in PATH
+export PATH="$(brew --prefix openssl@1.1)/bin:$PATH"
 
 # ---- FZF -----
 

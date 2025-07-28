@@ -46,8 +46,12 @@ export NVM_DIR="$HOME/.nvm"
 #   fi
 # fi
 
-# Run Fastfetch BTW
-# fastfetch
+# Java setup for Temurin 17
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"
+export PATH="$JAVA_HOME/bin:$PATH"
+
+export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
