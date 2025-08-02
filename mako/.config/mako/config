@@ -1,0 +1,30 @@
+sort=-time
+layer=overlay
+background-color=#2e3440
+font=MesloLGS Nerd Font Mono
+width=300
+height=110
+border-size=4
+border-color=#00ff99ee
+border-radius=15
+icons=0
+margin=30
+max-icon-size=64
+default-timeout=5000
+ignore-timeout=1
+font=monospace 14
+
+[urgency=low]
+border-color=#91d7e3
+
+[urgency=normal]
+border-color=#8aadf4
+
+[urgency=high]
+border-color=#f5a97f
+default-timeout=0
+
+[category=mpd]
+default-timeout=2000
+group-by=category
+
