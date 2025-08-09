@@ -21,7 +21,9 @@ if [ -f '/Users/neil.patterson/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 if [ -f '/Users/neil.patterson/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/neil.patterson/google-cloud-sdk/completion.zsh.inc'; fi
 
 # Set the openssl to 1.1 in PATH
-export PATH="$(brew --prefix openssl@1.1)/bin:$PATH"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	export PATH="$(brew --prefix openssl@1.1)/bin:$PATH"
+fi
 
 # ---- FZF -----
 
