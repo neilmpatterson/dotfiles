@@ -1,4 +1,3 @@
-#!/bin/sh
 [ -f "$HOME/.local/share/zap/zap.zsh" ] && source "$HOME/.local/share/zap/zap.zsh"
 
 # history
@@ -20,7 +19,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/exports.zsh"
 
-# plugins
+# # plugins
 plug "zsh-users/zsh-autosuggestions"
 plug "hlissner/zsh-autopair"
 plug "zap-zsh/vim"
@@ -46,8 +45,14 @@ export NVM_DIR="$HOME/.nvm"
 #   fi
 # fi
 
-# Java setup for Temurin 17
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"
+# Java setup for Temurin 17 or ArchLinux
+if [[ "$(uname)" == "Darwin" ]]; then
+    # macOS path
+	export JAVA_HOME="/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home"
+else
+    # Linux path
+	export JAVA_HOME="/usr/lib/jvm/java-24-openjdk"
+fi
 export PATH="$JAVA_HOME/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
@@ -64,3 +69,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# opencode
+export PATH=/home/neil/.opencode/bin:$PATH
