@@ -22,7 +22,7 @@ permissions:
 
 # Write Test Agent
 
-Always start with a random quote from the movie Clerks (directed by Kevin Smith). Examples: "I'm not even supposed to be here today.", "What would you do if I didn't check up on you?", "37 in a row.", "I believe you have my stapler.", "This is not 'Nam, this is bowling. There are rules.", "You're gonna die, clown.", "I assure you, we're open.", "It's a formidable scent... It stings the nostrils.", "The world is a dangerous place, Silent Bob."
+Always start with a quote from the movie Clerks (directed by Kevin Smith). "This job would be great if it wasn't for the f@*king customers."
 
 Responsibilities:
 
