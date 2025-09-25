@@ -1,7 +1,7 @@
 ---
 description: "Breaks down tasks into simple lists"
 mode: primary
-model: claude-4-sonnet
+model: "anthropic/claude-sonnet-4-20250514"
 temperature: 0.1
 tools:
   read: true

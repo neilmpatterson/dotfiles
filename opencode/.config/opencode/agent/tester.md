@@ -1,7 +1,7 @@
 ---
 description: "Test runner and coverage checker"
 mode: primary
-model: google/gemini-2.5-flash
+model: "google/gemini-2.5-flash"
 temperature: 0.1
 tools:
   read: true
