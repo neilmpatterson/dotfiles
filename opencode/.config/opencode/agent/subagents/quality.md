@@ -1,7 +1,7 @@
 ---
 description: "Quality checks: linting, typecheck, formatting, builds"
 mode: subagent
-model: claude-4-sonnet
+model: "github-copilot/claude-sonnet-4"
 temperature: 0.1
 tools:
   read: true
