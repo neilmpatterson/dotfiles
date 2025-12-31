@@ -1,7 +1,7 @@
 ---
 description: "Code implementation agent"
 mode: subagent
-model: "anthropic/claude-sonnet-4-20250514"
+model: "github-copilot/claude-3.5-sonnet"
 temperature: 0
 tools:
   read: true

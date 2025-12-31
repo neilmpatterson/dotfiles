@@ -70,5 +70,8 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# zoxide config
+eval "$(zoxide init zsh --cmd cd)"
+
 # opencode
 export PATH=/home/neil/.opencode/bin:$PATH
