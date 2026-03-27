@@ -75,3 +75,4 @@ eval "$(zoxide init zsh --cmd cd)"
 
 # opencode
 export PATH=/home/neil/.opencode/bin:$PATH
+alias timeshift-gtk='GDK_DEBUG=noglycin timeshift-gtk'
